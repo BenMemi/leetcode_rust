@@ -35,3 +35,12 @@ pub fn average(salary: Vec<i32>) -> f64 {
     } 
     ((sum - (min + max)) as f64) / ((salary.len() - 2) as f64)
 }
+
+    pub fn single_number(nums: Vec<i32>) -> i32 {
+        let mut a = 0;
+        for num in nums {
+            a ^= num;
+        }
+         a
+        
+    }
